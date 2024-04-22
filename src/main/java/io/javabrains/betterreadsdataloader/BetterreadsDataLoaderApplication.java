@@ -18,6 +18,11 @@ public class BetterreadsDataLoaderApplication {
 		SpringApplication.run(BetterreadsDataLoaderApplication.class, args);
 	}
 
+	/**
+	 * Summa
+	 * @param astraProperties
+	 * @return
+	 */
 	@Bean
 	CqlSessionBuilderCustomizer sessionBuilderCustomizer(DataStaxAstraProperties astraProperties) {
 		Path path = astraProperties.getSecureConnectBundle().toPath();
